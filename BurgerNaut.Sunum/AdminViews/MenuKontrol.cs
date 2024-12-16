@@ -1,5 +1,6 @@
 ﻿using BurgerNaut.Sunum.BurgerViews;
 using BurgerNaut.Sunum.IcecekViews;
+using BurgerNaut.Sunum.SatisViews;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -38,6 +39,13 @@ namespace BurgerNaut.Sunum.AdminViews
             icecek.Show();
             this.Close();
 
+        }
+
+        private void showSatis_Click(object sender, EventArgs e)
+        {
+            FrmSatisList satis = new FrmSatisList();
+            satis.Show();
+            this.Close();
         }
     }
 }
