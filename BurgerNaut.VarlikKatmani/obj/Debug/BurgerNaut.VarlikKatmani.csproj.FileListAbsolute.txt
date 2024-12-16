@@ -1,0 +1,9 @@
+C:\Users\Arda\Desktop\BurgerNaut_FINAL\BurgerNaut\BurgerNaut.VarlikKatmani\bin\Debug\BurgerNaut.VarlikKatmani.exe.config
+C:\Users\Arda\Desktop\BurgerNaut_FINAL\BurgerNaut\BurgerNaut.VarlikKatmani\bin\Debug\BurgerNaut.VarlikKatmani.exe
+C:\Users\Arda\Desktop\BurgerNaut_FINAL\BurgerNaut\BurgerNaut.VarlikKatmani\bin\Debug\BurgerNaut.VarlikKatmani.pdb
+C:\Users\Arda\Desktop\BurgerNaut_FINAL\BurgerNaut\BurgerNaut.VarlikKatmani\obj\Debug\BurgerNaut.VarlikKatmani.csproj.AssemblyReference.cache
+C:\Users\Arda\Desktop\BurgerNaut_FINAL\BurgerNaut\BurgerNaut.VarlikKatmani\obj\Debug\BurgerNaut.VarlikKatmani.Properties.Resources.resources
+C:\Users\Arda\Desktop\BurgerNaut_FINAL\BurgerNaut\BurgerNaut.VarlikKatmani\obj\Debug\BurgerNaut.VarlikKatmani.csproj.GenerateResource.cache
+C:\Users\Arda\Desktop\BurgerNaut_FINAL\BurgerNaut\BurgerNaut.VarlikKatmani\obj\Debug\BurgerNaut.VarlikKatmani.csproj.CoreCompileInputs.cache
+C:\Users\Arda\Desktop\BurgerNaut_FINAL\BurgerNaut\BurgerNaut.VarlikKatmani\obj\Debug\BurgerNaut.VarlikKatmani.exe
+C:\Users\Arda\Desktop\BurgerNaut_FINAL\BurgerNaut\BurgerNaut.VarlikKatmani\obj\Debug\BurgerNaut.VarlikKatmani.pdb

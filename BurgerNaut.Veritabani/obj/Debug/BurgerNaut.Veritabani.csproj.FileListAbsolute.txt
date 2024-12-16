@@ -1,0 +1,13 @@
+C:\Users\Arda\Desktop\BurgerNaut_FINAL\BurgerNaut\BurgerNaut.Veritabani\bin\Debug\BurgerNaut.Veritabani.exe.config
+C:\Users\Arda\Desktop\BurgerNaut_FINAL\BurgerNaut\BurgerNaut.Veritabani\bin\Debug\BurgerNaut.Veritabani.exe
+C:\Users\Arda\Desktop\BurgerNaut_FINAL\BurgerNaut\BurgerNaut.Veritabani\bin\Debug\BurgerNaut.Veritabani.pdb
+C:\Users\Arda\Desktop\BurgerNaut_FINAL\BurgerNaut\BurgerNaut.Veritabani\obj\Debug\BurgerNaut.Veritabani.csproj.AssemblyReference.cache
+C:\Users\Arda\Desktop\BurgerNaut_FINAL\BurgerNaut\BurgerNaut.Veritabani\obj\Debug\BurgerNaut.Veritabani.Properties.Resources.resources
+C:\Users\Arda\Desktop\BurgerNaut_FINAL\BurgerNaut\BurgerNaut.Veritabani\obj\Debug\BurgerNaut.Veritabani.csproj.GenerateResource.cache
+C:\Users\Arda\Desktop\BurgerNaut_FINAL\BurgerNaut\BurgerNaut.Veritabani\obj\Debug\BurgerNaut.Veritabani.csproj.CoreCompileInputs.cache
+C:\Users\Arda\Desktop\BurgerNaut_FINAL\BurgerNaut\BurgerNaut.Veritabani\obj\Debug\BurgerNaut.Veritabani.exe
+C:\Users\Arda\Desktop\BurgerNaut_FINAL\BurgerNaut\BurgerNaut.Veritabani\obj\Debug\BurgerNaut.Veritabani.pdb
+C:\Users\Arda\Desktop\BurgerNaut_FINAL\BurgerNaut\BurgerNaut.Veritabani\bin\Debug\BurgerNaut.VarlikKatmani.exe
+C:\Users\Arda\Desktop\BurgerNaut_FINAL\BurgerNaut\BurgerNaut.Veritabani\bin\Debug\BurgerNaut.VarlikKatmani.pdb
+C:\Users\Arda\Desktop\BurgerNaut_FINAL\BurgerNaut\BurgerNaut.Veritabani\bin\Debug\BurgerNaut.VarlikKatmani.exe.config
+C:\Users\Arda\Desktop\BurgerNaut_FINAL\BurgerNaut\BurgerNaut.Veritabani\obj\Debug\BurgerNa.E7C0D3C1.Up2Date
