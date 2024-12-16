@@ -58,9 +58,7 @@
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.MenulerBox = new System.Windows.Forms.ComboBox();
             this.lblSaat = new System.Windows.Forms.Label();
             this.lblTarih = new System.Windows.Forms.Label();
             this.burgerlerBox = new System.Windows.Forms.ComboBox();
@@ -91,13 +89,14 @@
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button4.Location = new System.Drawing.Point(378, 410);
+            this.button4.Location = new System.Drawing.Point(698, 399);
             this.button4.Margin = new System.Windows.Forms.Padding(0);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(176, 34);
+            this.button4.Size = new System.Drawing.Size(315, 46);
             this.button4.TabIndex = 66;
             this.button4.Text = "Sepeti Temizle";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -106,20 +105,21 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button3.Location = new System.Drawing.Point(378, 370);
+            this.button3.Location = new System.Drawing.Point(362, 399);
             this.button3.Margin = new System.Windows.Forms.Padding(0);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(176, 34);
+            this.button3.Size = new System.Drawing.Size(325, 46);
             this.button3.TabIndex = 65;
             this.button3.Text = "Seçili Ürünü Temizle";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
             this.label11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label11.Location = new System.Drawing.Point(376, 9);
+            this.label11.Location = new System.Drawing.Point(359, 9);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(52, 16);
@@ -159,11 +159,12 @@
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(154, 370);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(154, 358);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(201, 24);
+            this.button1.Size = new System.Drawing.Size(201, 36);
             this.button1.TabIndex = 58;
             this.button1.Text = "Sepete Ekle";
             this.button1.UseVisualStyleBackColor = true;
@@ -184,7 +185,7 @@
             // boxAdet
             // 
             this.boxAdet.Location = new System.Drawing.Point(157, 313);
-            this.boxAdet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.boxAdet.Margin = new System.Windows.Forms.Padding(2);
             this.boxAdet.Minimum = new decimal(new int[] {
             1,
             0,
@@ -215,7 +216,7 @@
             this.checkBox5.AutoSize = true;
             this.checkBox5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.checkBox5.Location = new System.Drawing.Point(264, 269);
-            this.checkBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox5.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(61, 19);
             this.checkBox5.TabIndex = 54;
@@ -229,9 +230,9 @@
             this.groupBox1.Controls.Add(this.kucukBoy);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
             this.groupBox1.Location = new System.Drawing.Point(154, 101);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(203, 45);
             this.groupBox1.TabIndex = 44;
             this.groupBox1.TabStop = false;
@@ -242,7 +243,7 @@
             this.buyukBoy.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.buyukBoy.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.buyukBoy.Location = new System.Drawing.Point(142, 17);
-            this.buyukBoy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buyukBoy.Margin = new System.Windows.Forms.Padding(2);
             this.buyukBoy.Name = "buyukBoy";
             this.buyukBoy.Size = new System.Drawing.Size(56, 16);
             this.buyukBoy.TabIndex = 2;
@@ -255,7 +256,7 @@
             this.ortaBoy.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.ortaBoy.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.ortaBoy.Location = new System.Drawing.Point(74, 17);
-            this.ortaBoy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ortaBoy.Margin = new System.Windows.Forms.Padding(2);
             this.ortaBoy.Name = "ortaBoy";
             this.ortaBoy.Size = new System.Drawing.Size(56, 16);
             this.ortaBoy.TabIndex = 1;
@@ -268,7 +269,7 @@
             this.kucukBoy.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.kucukBoy.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.kucukBoy.Location = new System.Drawing.Point(4, 17);
-            this.kucukBoy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kucukBoy.Margin = new System.Windows.Forms.Padding(2);
             this.kucukBoy.Name = "kucukBoy";
             this.kucukBoy.Size = new System.Drawing.Size(56, 16);
             this.kucukBoy.TabIndex = 0;
@@ -340,7 +341,7 @@
             this.pictureBox1.Image = global::BurgerNaut.Sunum.Properties.Resources.BURGERNAUT;
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBox1.Location = new System.Drawing.Point(9, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(136, 147);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -352,7 +353,7 @@
             this.checkBox2.AutoSize = true;
             this.checkBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.checkBox2.Location = new System.Drawing.Point(264, 205);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(60, 19);
             this.checkBox2.TabIndex = 50;
@@ -364,7 +365,7 @@
             this.checkBox6.AutoSize = true;
             this.checkBox6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.checkBox6.Location = new System.Drawing.Point(157, 269);
-            this.checkBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox6.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(90, 19);
             this.checkBox6.TabIndex = 53;
@@ -376,7 +377,7 @@
             this.checkBox3.AutoSize = true;
             this.checkBox3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.checkBox3.Location = new System.Drawing.Point(264, 237);
-            this.checkBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(79, 19);
             this.checkBox3.TabIndex = 52;
@@ -388,7 +389,7 @@
             this.checkBox4.AutoSize = true;
             this.checkBox4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.checkBox4.Location = new System.Drawing.Point(157, 237);
-            this.checkBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(89, 19);
             this.checkBox4.TabIndex = 51;
@@ -400,7 +401,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.checkBox1.Location = new System.Drawing.Point(157, 205);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(116, 19);
             this.checkBox1.TabIndex = 49;
@@ -419,18 +420,6 @@
             this.label8.TabIndex = 48;
             this.label8.Text = "Ekstra Malzemeler:";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(154, 66);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(1, 21);
-            this.comboBox1.TabIndex = 47;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -442,18 +431,6 @@
             this.label7.Size = new System.Drawing.Size(108, 16);
             this.label7.TabIndex = 46;
             this.label7.Text = "İçecek Seçimi:";
-            // 
-            // MenulerBox
-            // 
-            this.MenulerBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.MenulerBox.FormattingEnabled = true;
-            this.MenulerBox.Location = new System.Drawing.Point(154, 24);
-            this.MenulerBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.MenulerBox.Name = "MenulerBox";
-            this.MenulerBox.Size = new System.Drawing.Size(1, 21);
-            this.MenulerBox.TabIndex = 45;
             // 
             // lblSaat
             // 
@@ -479,36 +456,30 @@
             // 
             // burgerlerBox
             // 
-            this.burgerlerBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.burgerlerBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.burgerlerBox.FormattingEnabled = true;
             this.burgerlerBox.Items.AddRange(new object[] {
             "arda"});
             this.burgerlerBox.Location = new System.Drawing.Point(154, 24);
-            this.burgerlerBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.burgerlerBox.Margin = new System.Windows.Forms.Padding(2);
             this.burgerlerBox.Name = "burgerlerBox";
-            this.burgerlerBox.Size = new System.Drawing.Size(198, 21);
+            this.burgerlerBox.Size = new System.Drawing.Size(200, 21);
             this.burgerlerBox.TabIndex = 69;
             // 
             // iceceklerBox
             // 
-            this.iceceklerBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.iceceklerBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.iceceklerBox.FormattingEnabled = true;
             this.iceceklerBox.Location = new System.Drawing.Point(154, 66);
-            this.iceceklerBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iceceklerBox.Margin = new System.Windows.Forms.Padding(2);
             this.iceceklerBox.Name = "iceceklerBox";
-            this.iceceklerBox.Size = new System.Drawing.Size(198, 21);
+            this.iceceklerBox.Size = new System.Drawing.Size(200, 21);
             this.iceceklerBox.TabIndex = 70;
             // 
             // button6
             // 
             this.button6.Location = new System.Drawing.Point(8, 366);
-            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(136, 31);
             this.button6.TabIndex = 71;
@@ -521,17 +492,17 @@
             this.sepetList.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.sepetList.FormattingEnabled = true;
             this.sepetList.ItemHeight = 20;
-            this.sepetList.Location = new System.Drawing.Point(378, 24);
+            this.sepetList.Location = new System.Drawing.Point(361, 24);
             this.sepetList.Margin = new System.Windows.Forms.Padding(2);
             this.sepetList.Name = "sepetList";
-            this.sepetList.Size = new System.Drawing.Size(422, 344);
+            this.sepetList.Size = new System.Drawing.Size(652, 364);
             this.sepetList.TabIndex = 61;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(811, 456);
+            this.ClientSize = new System.Drawing.Size(1041, 456);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.iceceklerBox);
             this.Controls.Add(this.burgerlerBox);
@@ -560,17 +531,15 @@
             this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.MenulerBox);
             this.Controls.Add(this.lblSaat);
             this.Controls.Add(this.lblTarih);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BurgerNaut";
+            this.Text = "s";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.boxAdet)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -610,9 +579,7 @@
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox MenulerBox;
         private System.Windows.Forms.Label lblSaat;
         private System.Windows.Forms.Label lblTarih;
         private System.Windows.Forms.ComboBox burgerlerBox;
