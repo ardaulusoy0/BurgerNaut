@@ -128,26 +128,25 @@ namespace BurgerNaut.Sunum
                     // sepete ekleme verileri
                     string boyut = boy;
                     string burgerAd = burger.ToString().Split('-')[0].Trim();
-                    
-                    string icecekAd = icecek.ToString().Split('-')[0].Trim();
-                    string ekstralar = string.Join(",", selectedEkstras);
-
-                sepetList.Items.Add($"{burgerAd} ({boyut})");
-                if (selectedEkstras != null)
-                {
-                    sepetList.Items.Add("  Ekstralar:");
-
-                    foreach (var ekstra in selectedEkstras)
-                    {
-                        sepetList.Items.Add($"\t- {ekstra}"); // Girintili şekilde ekstraları ekle
-                    }
-                }
-                sepetList.Items.Add($"{icecekAd}");
                 
+                    string icecekAd = icecek.ToString().Split('-')[0].Trim();
+                    if(icecekAd == null)
+                    {
+                        icecekAd = "İçecek Yok";
+                    }
 
-                sepetList.Items.Add($"Adet: {adet}");
-                sepetList.Items.Add(new string('-', $"Adet: {adet}".Length));
-                sepetList.Items.Add($"Fiyat: {ekstraFiyat * adet:C2}");
+                    var burgerString = burgerlerBox.SelectedItem.ToString(); // Örnek: "Cheeseburger - 50"
+                    burgerString = burgerString.Replace("₺", "").Trim();
+                    var parts = burgerString.Split('-');
+                    var fiyatText = parts[1].Trim();
+                    var burgerFiyat = decimal.Parse(fiyatText);
+
+                    string ekstralar = string.Join(",", selectedEkstras);
+                    decimal toplamFiyat = (burgerFiyat + ekstraFiyat) * adet;
+                    string sepet = $"{burgerAd} ({boyut}) \n {icecekAd} \n  Eks({ekstralar}) x {adet} | {toplamFiyat:C2}";
+                    
+                    sepetList.Items.Add(sepet);
+
 
 
             }

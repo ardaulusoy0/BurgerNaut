@@ -33,11 +33,8 @@
             this.label13 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
-            this.listBox2 = new System.Windows.Forms.ListBox();
             this.label11 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.button5 = new System.Windows.Forms.Button();
             this.lblFiyat = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -117,27 +114,6 @@
             this.button3.Text = "Seçili Ürünü Temizle";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
-            this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label12.Location = new System.Drawing.Point(568, 8);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(134, 16);
-            this.label12.TabIndex = 64;
-            this.label12.Text = "Geçmiş Siparişler:";
-            // 
-            // listBox2
-            // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(570, 24);
-            this.listBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(227, 381);
-            this.listBox2.TabIndex = 63;
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -154,21 +130,6 @@
             // 
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
-            this.button5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button5.Location = new System.Drawing.Point(570, 410);
-            this.button5.Margin = new System.Windows.Forms.Padding(0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(226, 34);
-            this.button5.TabIndex = 67;
-            this.button5.Text = "Sipariş Detayı Görüntüle";
-            this.button5.UseVisualStyleBackColor = false;
             // 
             // lblFiyat
             // 
@@ -557,11 +518,13 @@
             // 
             // sepetList
             // 
+            this.sepetList.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.sepetList.FormattingEnabled = true;
+            this.sepetList.ItemHeight = 20;
             this.sepetList.Location = new System.Drawing.Point(378, 24);
             this.sepetList.Margin = new System.Windows.Forms.Padding(2);
             this.sepetList.Name = "sepetList";
-            this.sepetList.Size = new System.Drawing.Size(177, 342);
+            this.sepetList.Size = new System.Drawing.Size(422, 344);
             this.sepetList.TabIndex = 61;
             // 
             // Form1
@@ -575,11 +538,8 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.listBox2);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.sepetList);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.lblFiyat);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -625,11 +585,8 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label lblFiyat;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
