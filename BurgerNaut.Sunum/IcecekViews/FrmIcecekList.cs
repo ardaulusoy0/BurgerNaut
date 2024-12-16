@@ -126,7 +126,8 @@ namespace BurgerNaut.Sunum.IcecekViews
             }
         }
 
-        private void button3_Click_1(object sender, EventArgs e)
+
+        private void button3_Click(object sender, EventArgs e)
         {
             if (icecekBox.SelectedItem != null)
             {
@@ -164,7 +165,5 @@ namespace BurgerNaut.Sunum.IcecekViews
                 MessageBox.Show("Lütfen bir İçecek seçiniz.");
             }
         }
-
-       
     }
 }
