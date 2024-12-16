@@ -33,19 +33,9 @@ namespace BurgerNaut.Veritabani.Repos
 
         public int UpdtBurger(Burger burger)
         {
-            /*demin ekle butonu olarak gösterdiğin yere girmiyo şuanda başka bi kod mu var yok abi */
-            try
-            {
-                string query = "UPDATE Burgerler SET Ad = @ad, Fiyat = @fiyat WHERE Id = @id";
-                SqlCommand cmd = db.CreateCommand(query, burger.GetUpdateParameters());
-                return db.ExecuteNonQuery(cmd);
-            }
-            catch (Exception ex)
-            {
-                return 0;
-            }
-
-            return 0;
+            string query = "UPDATE Burgerler SET Ad = @ad, Fiyat = @fiyat WHERE Id = @id";
+            SqlCommand cmd = db.CreateCommand(query, burger.GetUpdateParameters());
+            return db.ExecuteNonQuery(cmd);
         }
 
         public int DelBurger(int burgerId)

@@ -19,19 +19,6 @@ namespace BurgerNaut.Sunum.IcecekViews
             InitializeComponent();
         }
 
-        private void GetBurgers()
-        {
-            DBAccess<Burger> db = new DBAccess<Burger>();
-
-        }
-        private void FrmIcecekList_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

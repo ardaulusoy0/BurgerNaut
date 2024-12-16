@@ -38,9 +38,11 @@ namespace BurgerNaut.Sunum.BurgerViews
             {
                 parentBurgerlerBox.Items.Clear();
 
+                parentBurgerlerBox.Items.Add("Burger Seçiniz");
+                parentBurgerlerBox.SelectedIndex = 0;
                 foreach (var burgerEkle in burgers)
                 {
-                    parentBurgerlerBox.Items.Add(burgerEkle.Ad);
+                    parentBurgerlerBox.Items.Add($"{burgerEkle.Ad} - {burgerEkle.Fiyat:C2}");
                 }
             }
         }
@@ -93,7 +95,6 @@ namespace BurgerNaut.Sunum.BurgerViews
                     {
                         updatedBurger.Id = selectedBurger.Id;
 
-                        MessageBox.Show($"Parameters: Ad={updatedBurger.Ad}, Fiyat={updatedBurger.Fiyat}, Id={updatedBurger.Id}");
                         int result = burgerRepo.UpdtBurger(updatedBurger);
                         if (result > 0)
                         {
@@ -135,7 +136,6 @@ namespace BurgerNaut.Sunum.BurgerViews
                             MessageBox.Show("Burger başarıyla silindi.");
                             LoadBurgers(); // Listeyi güncelle
 
-                            source.ResetBindings(true);
                         }
                         else
                         {

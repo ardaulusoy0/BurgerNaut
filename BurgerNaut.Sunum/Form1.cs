@@ -80,9 +80,7 @@ namespace BurgerNaut.Sunum
         private void button6_Click(object sender, EventArgs e)
         {
             AdminGiris admin = new AdminGiris();
-            /* buralarda gerek var mı abi bu menukontrol ve admingiris kısmında zaten gözükmüyor
-             formu ilk  buradan açtığın için buradan taşımak lazım kullanmasan da* 
-             */
+            
             admin.parentBurgerlerBox = burgerlerBox;
             admin.Show();
         }
