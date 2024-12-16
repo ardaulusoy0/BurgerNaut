@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurgerNaut.Sunum", "BurgerNaut.Sunum\BurgerNaut.Sunum.csproj", "{3AE931F5-E863-468E-80CC-82E2CE8170F1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{359DC821-777D-4296-84DF-CA43B27A3BCF} = {359DC821-777D-4296-84DF-CA43B27A3BCF}
+		{E40AF940-D077-4DFC-BC38-EEE1C1BD8505} = {E40AF940-D077-4DFC-BC38-EEE1C1BD8505}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurgerNaut.Veritabani", "BurgerNaut.Veritabani\BurgerNaut.Veritabani.csproj", "{359DC821-777D-4296-84DF-CA43B27A3BCF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E40AF940-D077-4DFC-BC38-EEE1C1BD8505} = {E40AF940-D077-4DFC-BC38-EEE1C1BD8505}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurgerNaut.VarlikKatmani", "BurgerNaut.VarlikKatmani\BurgerNaut.VarlikKatmani.csproj", "{E40AF940-D077-4DFC-BC38-EEE1C1BD8505}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AE931F5-E863-468E-80CC-82E2CE8170F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AE931F5-E863-468E-80CC-82E2CE8170F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AE931F5-E863-468E-80CC-82E2CE8170F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AE931F5-E863-468E-80CC-82E2CE8170F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{359DC821-777D-4296-84DF-CA43B27A3BCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{359DC821-777D-4296-84DF-CA43B27A3BCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{359DC821-777D-4296-84DF-CA43B27A3BCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{359DC821-777D-4296-84DF-CA43B27A3BCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E40AF940-D077-4DFC-BC38-EEE1C1BD8505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E40AF940-D077-4DFC-BC38-EEE1C1BD8505}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E40AF940-D077-4DFC-BC38-EEE1C1BD8505}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E40AF940-D077-4DFC-BC38-EEE1C1BD8505}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7635865-D695-431B-BCE6-07E2AC71446E}
+	EndGlobalSection
+EndGlobal
