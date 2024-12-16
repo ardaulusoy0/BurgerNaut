@@ -31,7 +31,7 @@ namespace BurgerNaut.Sunum.BurgerViews
             source.DataSource = burgers;
             burgerBox.DataSource = null; // Önce sıfırla
             burgerBox.DataSource = source;
-            burgerBox.DisplayMember = "Ad";  // Görünen alan Ad
+            burgerBox.DisplayMember = "DispName";  // Görünen alan Ad
             burgerBox.ValueMember = "Id";   // Arka planda Id kullan
 
             if(parentBurgerlerBox != null)
@@ -154,9 +154,5 @@ namespace BurgerNaut.Sunum.BurgerViews
             }
         }
 
-        private void FrmBurgerList_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

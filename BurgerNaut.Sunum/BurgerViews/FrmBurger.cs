@@ -16,6 +16,7 @@ namespace BurgerNaut.Sunum.BurgerViews
             Burger = burger;
             txtburgerAd.Text = Burger.Ad;
             txtburgerFiyat.Text = Burger.Fiyat.ToString("C2");
+
         }
                 
 

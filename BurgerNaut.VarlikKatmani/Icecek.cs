@@ -13,6 +13,7 @@ namespace BurgerNaut.VarlikKatmani
         public int Id { get; set; }
         public string Ad { get; set; }
         public decimal Fiyat { get; set; }
+        public string DispName => $"{Ad} - {Fiyat:C2}";
 
         public List<SqlParameter> GetDeleteParameters()
         {
@@ -29,6 +30,7 @@ namespace BurgerNaut.VarlikKatmani
                 new SqlParameter("@id", this.Id),
                 new SqlParameter("@ad", this.Ad),
                 new SqlParameter("@fiyat", this.Fiyat),
+
             };
         }
 
@@ -36,9 +38,10 @@ namespace BurgerNaut.VarlikKatmani
         {
             return new List<SqlParameter>
             {
-                new SqlParameter("@id", this.Id),
                 new SqlParameter("@ad", this.Ad),
                 new SqlParameter("@fiyat", this.Fiyat),
+                new SqlParameter("@id", this.Id),
+
             };
         }
 

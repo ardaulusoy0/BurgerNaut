@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmIcecek));
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,18 +41,19 @@
             // 
             this.button2.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.button2.Location = new System.Drawing.Point(124, 119);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(74, 26);
             this.button2.TabIndex = 11;
             this.button2.Text = "Ekle";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button1
             // 
             this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button1.Location = new System.Drawing.Point(46, 119);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(74, 26);
             this.button1.TabIndex = 10;
@@ -72,7 +74,7 @@
             // txticecekFiyat
             // 
             this.txticecekFiyat.Location = new System.Drawing.Point(9, 88);
-            this.txticecekFiyat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txticecekFiyat.Margin = new System.Windows.Forms.Padding(2);
             this.txticecekFiyat.Name = "txticecekFiyat";
             this.txticecekFiyat.Size = new System.Drawing.Size(189, 20);
             this.txticecekFiyat.TabIndex = 8;
@@ -91,7 +93,7 @@
             // txticecekAd
             // 
             this.txticecekAd.Location = new System.Drawing.Point(9, 39);
-            this.txticecekAd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txticecekAd.Margin = new System.Windows.Forms.Padding(2);
             this.txticecekAd.Name = "txticecekAd";
             this.txticecekAd.Size = new System.Drawing.Size(189, 20);
             this.txticecekAd.TabIndex = 6;
@@ -107,8 +109,10 @@
             this.Controls.Add(this.txticecekFiyat);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txticecekAd);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmIcecek";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmIcecek";
             this.ResumeLayout(false);
             this.PerformLayout();

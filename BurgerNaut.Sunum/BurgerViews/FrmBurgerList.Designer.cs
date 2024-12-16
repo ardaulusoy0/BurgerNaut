@@ -108,7 +108,6 @@
             this.Name = "FrmBurgerList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmBurgerList";
-            this.Load += new System.EventHandler(this.FrmBurgerList_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

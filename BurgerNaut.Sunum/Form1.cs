@@ -82,6 +82,7 @@ namespace BurgerNaut.Sunum
             AdminGiris admin = new AdminGiris();
             
             admin.parentBurgerlerBox = burgerlerBox;
+            admin.parentDrinksBox = iceceklerBox;
             admin.Show();
         }
 

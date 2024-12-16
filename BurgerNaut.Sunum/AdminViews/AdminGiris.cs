@@ -15,6 +15,7 @@ namespace BurgerNaut.Sunum.AdminViews
     public partial class AdminGiris : Form
     {
         public ComboBox parentBurgerlerBox;
+        public ComboBox parentDrinksBox;
 
         public AdminGiris()
         {
@@ -35,6 +36,7 @@ namespace BurgerNaut.Sunum.AdminViews
                 this.DialogResult = DialogResult.OK;
                 MenuKontrol menu = new MenuKontrol();
                 menu.parentBurgerlerBox = parentBurgerlerBox;
+                menu.parentDrinksBox = parentDrinksBox;
                 menu.Show();
                 this.Close();
             }

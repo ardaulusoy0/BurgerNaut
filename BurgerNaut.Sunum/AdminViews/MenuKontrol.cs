@@ -15,6 +15,7 @@ namespace BurgerNaut.Sunum.AdminViews
     public partial class MenuKontrol : Form
     {
         public ComboBox parentBurgerlerBox;
+        public ComboBox parentDrinksBox;
 
         public MenuKontrol()
         {
@@ -33,6 +34,7 @@ namespace BurgerNaut.Sunum.AdminViews
         private void showDrinks_Click(object sender, EventArgs e)
         {
             FrmIcecekList icecek = new FrmIcecekList();
+            icecek.parentDrinksBox = parentDrinksBox;
             icecek.Show();
             this.Close();
 

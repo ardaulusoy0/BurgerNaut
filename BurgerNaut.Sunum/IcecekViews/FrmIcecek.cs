@@ -14,10 +14,9 @@ namespace BurgerNaut.Sunum.IcecekViews
     public partial class FrmIcecek : Form
     {
         public Icecek Icecek { get; set; }
-        public FrmIcecek()
-        {
-            InitializeComponent();
-        }
+
+        public FrmIcecek() : this(new Icecek()) { }
+        
 
         public FrmIcecek(Icecek icecek)
         {
@@ -27,10 +26,9 @@ namespace BurgerNaut.Sunum.IcecekViews
             txticecekFiyat.Text = Icecek.Fiyat.ToString("C2");
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
-            /*fiyatı decimal olarak parse edemediği için yeni değerleri almıyordu, şimdi karakterleri
-             falan silip gönderince parse edebilir sorun olmaz*/
+           
 
             var YeniFiyat = txticecekFiyat.Text.Replace("₺", "").Replace(" ", "");
             if (decimal.TryParse(YeniFiyat, out decimal fiyat))
@@ -48,7 +46,6 @@ namespace BurgerNaut.Sunum.IcecekViews
 
 
         }
-
 
     }
 }

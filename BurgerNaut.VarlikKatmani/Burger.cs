@@ -14,10 +14,7 @@ namespace BurgerNaut.VarlikKatmani
         public string Ad { get; set; }
         public decimal Fiyat { get; set; }
 
-        public override string ToString()
-        {
-            return $"{Ad} - {Fiyat:C2}";
-        }
+        public string DispName => $"{Ad} - {Fiyat:C2}";
         public List<SqlParameter> GetDeleteParameters()
         {
             return new List<SqlParameter>
