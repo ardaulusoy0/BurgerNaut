@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BurgerNaut.VarlikKatmani;
 using System.Data.SqlClient;
+using BurgerNaut.Veritabani;
 
 namespace BurgerNaut.Veritabani.Repos
 {
@@ -23,6 +24,17 @@ namespace BurgerNaut.Veritabani.Repos
             SqlCommand cmd = db.CreateCommand(query);
             return db.ToList(cmd);
         }
+
+        public List<Burger> GetBurgerPriceByName(string name)
+        {
+            string query = "SELECT Id,Fiyat FROM Burgerler WHERE Ad = @ad";
+            SqlCommand cmd = db.CreateCommand(query);
+            cmd.Parameters.AddWithValue("@ad", name);
+
+            return db.ToList<Burger>(cmd);
+        }
+
+
 
         public int AddBurger(Burger burger)
         {

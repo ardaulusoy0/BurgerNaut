@@ -25,6 +25,15 @@ namespace BurgerNaut.Veritabani.Repos
             return db.ToList(cmd);
         }
 
+        public List<Burger> GetIcecekPriceByName(string name)
+        {
+            string query = "SELECT Id,Fiyat FROM Icecekler WHERE Ad = @ad";
+            SqlCommand cmd = db.CreateCommand(query);
+            cmd.Parameters.AddWithValue("@ad", name);
+
+            return db.ToList<Burger>(cmd);
+        }
+
         public int AddIcecek(Icecek icecek)
         {
             string query = "INSERT INTO Icecekler (Ad,Fiyat) VALUES (@ad, @fiyat)";

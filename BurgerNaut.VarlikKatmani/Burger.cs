@@ -49,5 +49,7 @@ namespace BurgerNaut.VarlikKatmani
             Ad = reader["Ad"] != DBNull.Value ? reader["Ad"].ToString() : "Burger Adı Yok";
             Fiyat = reader["Fiyat"] != DBNull.Value ? Convert.ToDecimal(reader["Fiyat"]) : 0;
         }
+
+        
     }
 }

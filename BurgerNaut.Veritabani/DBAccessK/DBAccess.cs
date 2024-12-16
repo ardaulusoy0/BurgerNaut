@@ -71,6 +71,21 @@ namespace BurgerNaut.Veritabani
             return items;
         }
 
+        public List<T> ToList<T>(SqlCommand cmd) where T: IModel, new()
+        {
+            List<T> items = new List<T>();
+            ConnAc();
+            SqlDataReader read = cmd.ExecuteReader();
+            while(read.Read())
+            {
+                T item = new T();
+                item.Read(read);
+                items.Add(item);
+            }
+            ConnKapat();
+            return items;
+        }
+
         public object ExecuteScalar(SqlCommand cmd)
         {
             ConnAc();

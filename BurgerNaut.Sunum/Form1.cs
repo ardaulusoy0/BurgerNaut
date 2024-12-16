@@ -86,7 +86,75 @@ namespace BurgerNaut.Sunum
             admin.Show();
         }
 
-       
+        
 
+        private void button1_Click(object sender, EventArgs e)
+            {
+                var burger = burgerlerBox.SelectedItem;
+                var icecek = iceceklerBox.SelectedItem;
+
+                if(burger != null && icecek != null)
+                {
+                    BurgerRepository burgerRep = new BurgerRepository();
+                    IcecekRepository icecekRep = new IcecekRepository();
+
+                    var ekstraFiyat = 0;
+                    string boy = "Küçük";
+                    if(ortaBoy.Checked)
+                    {
+                        ekstraFiyat += 10;
+                        boy = "Orta";
+                    } else if(buyukBoy.Checked)
+                    {
+                        ekstraFiyat += 15;
+                        boy = "Büyük";
+                    }
+
+                    int checkedEkstra = 0;
+                    List<string> selectedEkstras = new List<string>();
+                    foreach (Control control in this.Controls)
+                    {
+                        if(control is CheckBox checbox && checbox.Checked)
+                        {
+                            checkedEkstra++;
+                            selectedEkstras.Add(checbox.Text);
+                        }
+                    }
+                    string[] listEkstra = selectedEkstras.ToArray();
+                    ekstraFiyat = ekstraFiyat + (checkedEkstra * 5);
+
+                    int adet = (int)boxAdet.Value;
+
+                    // sepete ekleme verileri
+                    string boyut = boy;
+                    string burgerAd = burger.ToString().Split('-')[0].Trim();
+                    
+                    string icecekAd = icecek.ToString().Split('-')[0].Trim();
+                    string ekstralar = string.Join(",", selectedEkstras);
+
+                sepetList.Items.Add($"{burgerAd} ({boyut})");
+                if (selectedEkstras != null)
+                {
+                    sepetList.Items.Add("  Ekstralar:");
+
+                    foreach (var ekstra in selectedEkstras)
+                    {
+                        sepetList.Items.Add($"\t- {ekstra}"); // Girintili şekilde ekstraları ekle
+                    }
+                }
+                sepetList.Items.Add($"{icecekAd}");
+                
+
+                sepetList.Items.Add($"Adet: {adet}");
+                sepetList.Items.Add(new string('-', $"Adet: {adet}".Length));
+                sepetList.Items.Add($"Fiyat: {ekstraFiyat * adet:C2}");
+
+
+            }
+            else 
+            {
+                MessageBox.Show("Hamburger ve İçecek seçmeden ilerleyemezsin.");
+            }
+        }
     }
 }
