@@ -138,23 +138,17 @@ namespace BurgerNaut.Sunum
                     icecekAd = "İçecek Yok";
                 }
 
-                var burgerString = burgerlerBox.SelectedItem.ToString();
-                burgerString = burgerString.Replace("₺", "").Trim();
-                var parts = burgerString.Split('-');
-                var fiyatText = parts[1].Trim();
-                var burgerFiyat = decimal.Parse(fiyatText);
+                    var burgerString = burgerlerBox.SelectedItem.ToString(); // Örnek: "Cheeseburger - 50"
+                    burgerString = burgerString.Replace("₺", "").Trim();
+                    var parts = burgerString.Split('-');
+                    var fiyatText = parts[1].Trim();
+                    var burgerFiyat = decimal.Parse(fiyatText);
 
-                var icecekString = iceceklerBox.SelectedItem.ToString();
-                icecekString = icecekString.Replace("₺", "").Trim();
-                var partsIcecek = icecekString.Split('-');
-                var fiyatText2 = parts[1].Trim();
-                var icecekFiyat = decimal.Parse(fiyatText2);
-
-                string ekstralar = string.Join(",", selectedEkstras);
-                decimal toplamFiyat = (burgerFiyat + icecekFiyat + ekstraFiyat) * adet;
-                string sepet = $"{burgerAd} ({boyut}) \n {icecekAd} \n  Eks({ekstralar}) x {adet} | {toplamFiyat:C2}";
-
-                sepetList.Items.Add(sepet);
+                    string ekstralar = string.Join(",", selectedEkstras);
+                    decimal toplamFiyat = (burgerFiyat + ekstraFiyat) * adet;
+                    string sepet = $"{burgerAd} ({boyut}) \n {icecekAd} \n  Eks({ekstralar}) x {adet} | {toplamFiyat:C2}";
+                    
+                    sepetList.Items.Add(sepet);
 
 
 
@@ -163,6 +157,23 @@ namespace BurgerNaut.Sunum
             {
                 MessageBox.Show("Hamburger ve İçecek seçmeden ilerleyemezsin.");
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (sepetList.SelectedItem != null)
+            {
+                sepetList.Items.Remove(sepetList.SelectedItem);
+            }
+            else
+            {
+                MessageBox.Show("Lütfen bir öğe seçin.");
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            sepetList.Items.Clear();
         }
 
         private void button3_Click(object sender, EventArgs e)

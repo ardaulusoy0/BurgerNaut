@@ -453,8 +453,8 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(9, 407);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
+            this.button6.Location = new System.Drawing.Point(8, 366);
+            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(136, 31);
             this.button6.TabIndex = 71;
