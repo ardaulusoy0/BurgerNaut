@@ -176,25 +176,6 @@ namespace BurgerNaut.Sunum
             sepetList.Items.Clear();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            if (sepetList.SelectedItem != null)
-            {
-                sepetList.Items.Remove(sepetList.SelectedItem);
-                MessageBox.Show("Seçili Ürün Temizlendi.");
-            }
-            else
-            {
-                MessageBox.Show("Lütfen bir öğe seçin.");
-            }
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            sepetList.Items.Clear();
-            MessageBox.Show("Sepet Temizlendi.");
-        }
-
 
         private void button2_Click(object sender, EventArgs e)
         {
